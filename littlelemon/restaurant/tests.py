@@ -13,19 +13,17 @@ class MenuTest(TestCase):
         
         
 # class MenuViewTest(TestCase):
-#     def setUp(self) -> None:
+    # def setUp(self) -> None:
         
-#         self.bread = Menu.objects.create(title='Bread', price=4.99, inventory=20)
-#         self.pancake = Menu.objects.create(title='Pan Cake', price=12.99, inventory=50)
+    #     Menu.objects.create(title='Bread', price=4.99, inventory=20)
+    #     Menu.objects.create(title='Pan Cake', price=12.99, inventory=50)
         
-#     def test_getall(self):    
-#         menu = Menu.objects.all()
-#         instances = [
-#         {'id': 1, 'title': 'Bread', 'price': 4.99, 'inventory': 20},
-#        {'id': 2, 'title': 'Pan Cake', 'price': 12.99, 'inventory': 50},
-#     ]
-#         serializer = MenuSerializer(menu, many=True)
-#         self.assertEqual(serializer, instances)
-
+    # def test_getall(self):    
+    #     menu = Menu.objects.all()
+    #     serializer = MenuSerializer(menu, many=True)
+    #     bread = Menu.objects.get(title="bread")
+    #     self.assertEqual(bread.title, serializer.data[1].title)
+    #     #bread = Menu.objects.get(title="bread")
+      
         
 

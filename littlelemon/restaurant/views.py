@@ -1,3 +1,4 @@
+from django.shortcuts import render
 from rest_framework import status, generics
 from .serializers import BookingSerializer, MenuSerializer, UserSerializer
 from .models import Menu, Booking
@@ -8,6 +9,10 @@ from rest_framework.decorators import api_view, permission_classes
 
 
 
+
+# Create your views here.
+def index(request):
+    return render(request, 'index.html', {})
 
 
 class MenuView(generics.ListAPIView, generics.ListCreateAPIView):
